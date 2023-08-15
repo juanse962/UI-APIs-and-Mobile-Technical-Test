@@ -1,0 +1,63 @@
+defaultTasks 'clean', 'test', 'aggregate'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: "net.serenity-bdd.serenity-gradle-plugin"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+buildscript {
+    ext {
+        slf4jVersion = '2.0.7'
+        serenityCoreVersion = '3.7.1'
+        junitVersion = '4.13.2'
+        assertJVersion = '3.23.1'
+        logbackVersion = '1.4.6'
+        javaClientAppium = '8.3.0'
+        junitPlatform = '1.9.1'
+        junitJupiter = '5.9.2'
+        junitVintage = '5.9.2'
+    }
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "net.serenity-bdd:serenity-gradle-plugin:3.6.7"
+        classpath "net.serenity-bdd:serenity-single-page-report:$serenityCoreVersion"
+    }
+}
+
+dependencies {
+    implementation "net.serenity-bdd:serenity-core:${serenityCoreVersion}",
+    "org.slf4j:slf4j-simple:${slf4jVersion}" ,
+    "ch.qos.logback:logback-classic:${logbackVersion}",
+    "net.serenity-bdd:serenity-cucumber:${serenityCoreVersion}",
+    "net.serenity-bdd:serenity-screenplay:${serenityCoreVersion}",
+    "net.serenity-bdd:serenity-ensure:${serenityCoreVersion}",
+    "junit:junit:${junitVersion}",
+    "io.appium:java-client:${javaClientAppium}",
+    "org.junit.platform:junit-platform-launcher:${junitPlatform}",
+    "org.junit.jupiter:junit-jupiter-engine:${junitJupiter}",
+    "org.junit.vintage:junit-vintage-engine:${junitVintage}",
+    "org.assertj:assertj-core:${assertJVersion}"
+}
+
+test {
+    testLogging.showStandardStreams = true
+    systemProperties System.getProperties()
+}
+
+serenity {
+    testRoot = "co.com.choucair.certification.runner"
+    requirementsBaseDir = "src/test/resources/features"
+    reports = ["single-page-html"]
+}
+
+gradle.startParameter.continueOnFailure = true
+test.finalizedBy(aggregate)
