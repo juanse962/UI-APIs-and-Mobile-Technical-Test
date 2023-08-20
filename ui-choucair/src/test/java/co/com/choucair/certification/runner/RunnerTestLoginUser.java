@@ -9,7 +9,6 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         glue = {"co/com/choucair/certification/stepdefinitions"},
         features = {"src/test/resources/features/login.feature"},
-        plugin = {"pretty"},
         tags = "@smoke",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
