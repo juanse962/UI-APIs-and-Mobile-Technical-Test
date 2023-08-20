@@ -1,4 +1,4 @@
-Feature: Profile
+Feature: Add item to cart
 
   Scenario Outline: Add an item to cart
     Given The user into the app without credentials

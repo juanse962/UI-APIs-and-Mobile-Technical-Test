@@ -9,7 +9,7 @@ pipeline {
 
     stages {
         stage('Checkout') {
-            steps { 
+            steps {
                 // Checkout your source code from the specified Git repository
                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], userRemoteConfigs: [[url: "${GIT_REPO_URL}"]]])
             }

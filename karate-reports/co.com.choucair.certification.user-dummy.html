@@ -1,0 +1,2135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+      posthog.register_once({
+        karate_version:"1.2.0.RC5"
+      });
+      posthog.capture('report_feature');
+    </script>    
+    <title>co.com.choucair.certification.user-dummy</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-08-16 11:55:38 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:19]"><span>[1:19]</span> <span>Get employees</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:24]"><span>[2:24]</span> <span>Create employee</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:31]"><span>[3:31]</span> <span>Update an employee</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:38]"><span>[4:38]</span> <span>Delete an employee</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">co/com/choucair/certification/user-dummy.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Testing Dummy API using Karate DSL</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:19]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:19]</span>
+                <span class="scenario-name">Get employees</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>806</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:19]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def templatePost = read(&#39;classpath:co/com/choucair/certification/utils/post_request.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">50</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def templateUpdate = read(&#39;classpath:co/com/choucair/certification/utils/update_request.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def rnd = Math.floor(Math.random() * (max - min + 1) + min)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templatePost.data.id = rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templatePost.data.name = name + rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templatePost.data.salary = rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templatePost.data.age = rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templateUpdate.name = name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templateUpdate.salary = rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templateUpdate.age = rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;employees&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">734</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">11:55:36.218 request:
+1 &gt; GET https://dummy.restapiexample.com/api/v1/employees
+1 &gt; Host: dummy.restapiexample.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:55:36.852 response time in milliseconds: 632
+1 &lt; 200
+1 &lt; Date: Wed, 16 Aug 2023 16:55:33 GMT
+1 &lt; Server: nginx/1.21.6
+1 &lt; Content-Type: application/json
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Cache-Control: max-age=21600
+1 &lt; X-RateLimit-Limit: 60
+1 &lt; X-RateLimit-Remaining: 58
+1 &lt; Expires: Wed, 16 Aug 2023 22:55:35 GMT
+1 &lt; Vary: Accept-Encoding
+1 &lt; host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 &lt; X-Endurance-Cache-Level: 2
+1 &lt; X-nginx-cache: WordPress
+1 &lt; X-Server-Cache: true
+1 &lt; X-Proxy-Cache: MISS
+{&quot;status&quot;:&quot;success&quot;,&quot;data&quot;:[{&quot;id&quot;:1,&quot;employee_name&quot;:&quot;Tiger Nixon&quot;,&quot;employee_salary&quot;:320800,&quot;employee_age&quot;:61,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:2,&quot;employee_name&quot;:&quot;Garrett Winters&quot;,&quot;employee_salary&quot;:170750,&quot;employee_age&quot;:63,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:3,&quot;employee_name&quot;:&quot;Ashton Cox&quot;,&quot;employee_salary&quot;:86000,&quot;employee_age&quot;:66,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:4,&quot;employee_name&quot;:&quot;Cedric Kelly&quot;,&quot;employee_salary&quot;:433060,&quot;employee_age&quot;:22,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:5,&quot;employee_name&quot;:&quot;Airi Satou&quot;,&quot;employee_salary&quot;:162700,&quot;employee_age&quot;:33,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:6,&quot;employee_name&quot;:&quot;Brielle Williamson&quot;,&quot;employee_salary&quot;:372000,&quot;employee_age&quot;:61,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:7,&quot;employee_name&quot;:&quot;Herrod Chandler&quot;,&quot;employee_salary&quot;:137500,&quot;employee_age&quot;:59,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:8,&quot;employee_name&quot;:&quot;Rhona Davidson&quot;,&quot;employee_salary&quot;:327900,&quot;employee_age&quot;:55,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:9,&quot;employee_name&quot;:&quot;Colleen Hurst&quot;,&quot;employee_salary&quot;:205500,&quot;employee_age&quot;:39,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:10,&quot;employee_name&quot;:&quot;Sonya Frost&quot;,&quot;employee_salary&quot;:103600,&quot;employee_age&quot;:23,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:11,&quot;employee_name&quot;:&quot;Jena Gaines&quot;,&quot;employee_salary&quot;:90560,&quot;employee_age&quot;:30,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:12,&quot;employee_name&quot;:&quot;Quinn Flynn&quot;,&quot;employee_salary&quot;:342000,&quot;employee_age&quot;:22,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:13,&quot;employee_name&quot;:&quot;Charde Marshall&quot;,&quot;employee_salary&quot;:470600,&quot;employee_age&quot;:36,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:14,&quot;employee_name&quot;:&quot;Haley Kennedy&quot;,&quot;employee_salary&quot;:313500,&quot;employee_age&quot;:43,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:15,&quot;employee_name&quot;:&quot;Tatyana Fitzpatrick&quot;,&quot;employee_salary&quot;:385750,&quot;employee_age&quot;:19,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:16,&quot;employee_name&quot;:&quot;Michael Silva&quot;,&quot;employee_salary&quot;:198500,&quot;employee_age&quot;:66,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:17,&quot;employee_name&quot;:&quot;Paul Byrd&quot;,&quot;employee_salary&quot;:725000,&quot;employee_age&quot;:64,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:18,&quot;employee_name&quot;:&quot;Gloria Little&quot;,&quot;employee_salary&quot;:237500,&quot;employee_age&quot;:59,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:19,&quot;employee_name&quot;:&quot;Bradley Greer&quot;,&quot;employee_salary&quot;:132000,&quot;employee_age&quot;:41,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:20,&quot;employee_name&quot;:&quot;Dai Rios&quot;,&quot;employee_salary&quot;:217500,&quot;employee_age&quot;:35,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:21,&quot;employee_name&quot;:&quot;Jenette Caldwell&quot;,&quot;employee_salary&quot;:345000,&quot;employee_age&quot;:30,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:22,&quot;employee_name&quot;:&quot;Yuri Berry&quot;,&quot;employee_salary&quot;:675000,&quot;employee_age&quot;:40,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:23,&quot;employee_name&quot;:&quot;Caesar Vance&quot;,&quot;employee_salary&quot;:106450,&quot;employee_age&quot;:21,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:24,&quot;employee_name&quot;:&quot;Doris Wilder&quot;,&quot;employee_salary&quot;:85600,&quot;employee_age&quot;:23,&quot;profile_image&quot;:&quot;&quot;}],&quot;message&quot;:&quot;Successfully! All records has been fetched.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>assert responseStatus == 200 || responseStatus == 429</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:24]</span>
+                <span class="scenario-name">Create employee</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>467</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:24]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def templatePost = read(&#39;classpath:co/com/choucair/certification/utils/post_request.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def templateUpdate = read(&#39;classpath:co/com/choucair/certification/utils/update_request.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def rnd = Math.floor(Math.random() * (max - min + 1) + min)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templatePost.data.id = rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templatePost.data.name = name + rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templatePost.data.salary = rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templatePost.data.age = rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templateUpdate.name = name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templateUpdate.salary = rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templateUpdate.age = rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;create&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request templatePost</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">461</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.28">11:55:36.901 request:
+1 &gt; POST https://dummy.restapiexample.com/api/v1/create
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 79
+1 &gt; Host: dummy.restapiexample.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;status&quot;:&quot;success&quot;,&quot;data&quot;:{&quot;name&quot;:&quot;sebas576&quot;,&quot;salary&quot;:576,&quot;age&quot;:576,&quot;id&quot;:576}}
+
+11:55:37.334 response time in milliseconds: 433
+1 &lt; 429
+1 &lt; Date: Wed, 16 Aug 2023 16:55:36 GMT
+1 &lt; Server: Apache
+1 &lt; X-RateLimit-Limit: 60
+1 &lt; X-RateLimit-Remaining: 57
+1 &lt; retry-after: 59
+1 &lt; x-ratelimit-reset: 1692204995
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Upgrade: h2,h2c
+1 &lt; Connection: Upgrade
+1 &lt; Vary: Accept-Encoding
+1 &lt; host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 &lt; X-Endurance-Cache-Level: 2
+1 &lt; X-nginx-cache: WordPress
+1 &lt; Content-Type: text/html; charset=UTF-8
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+
+        &lt;title&gt;Too Many Requests&lt;/title&gt;
+
+        &lt;!-- Fonts --&gt;
+        &lt;link rel=&quot;dns-prefetch&quot; href=&quot;//fonts.gstatic.com&quot;&gt;
+        &lt;link href=&quot;https://fonts.googleapis.com/css?family=Nunito&quot; rel=&quot;stylesheet&quot;&gt;
+
+        &lt;!-- Styles --&gt;
+        &lt;style&gt;
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: &#39;Nunito&#39;, sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 26px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;flex-center position-ref full-height&quot;&gt;
+            &lt;div class=&quot;code&quot;&gt;
+                429            &lt;/div&gt;
+
+            &lt;div class=&quot;message&quot; style=&quot;padding: 10px;&quot;&gt;
+                Too Many Requests            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>assert responseStatus == 200 || responseStatus == 429</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:31]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:31]</span>
+                <span class="scenario-name">Update an employee</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>432</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:31]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def templatePost = read(&#39;classpath:co/com/choucair/certification/utils/post_request.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def templateUpdate = read(&#39;classpath:co/com/choucair/certification/utils/update_request.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def rnd = Math.floor(Math.random() * (max - min + 1) + min)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templatePost.data.id = rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templatePost.data.name = name + rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templatePost.data.salary = rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templatePost.data.age = rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templateUpdate.name = name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templateUpdate.salary = rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templateUpdate.age = rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;update/&#39; + rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request templateUpdate</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">426</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.35">11:55:37.348 request:
+1 &gt; PUT https://dummy.restapiexample.com/api/v1/update/249
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 39
+1 &gt; Host: dummy.restapiexample.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;sebas&quot;,&quot;salary&quot;:249,&quot;age&quot;:249}
+
+11:55:37.773 response time in milliseconds: 424
+1 &lt; 429
+1 &lt; Date: Wed, 16 Aug 2023 16:55:36 GMT
+1 &lt; Server: Apache
+1 &lt; X-RateLimit-Limit: 60
+1 &lt; X-RateLimit-Remaining: 56
+1 &lt; retry-after: 59
+1 &lt; x-ratelimit-reset: 1692204995
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Upgrade: h2,h2c
+1 &lt; Connection: Upgrade
+1 &lt; Vary: Accept-Encoding
+1 &lt; host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 &lt; X-Endurance-Cache-Level: 2
+1 &lt; X-nginx-cache: WordPress
+1 &lt; Content-Type: text/html; charset=UTF-8
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+
+        &lt;title&gt;Too Many Requests&lt;/title&gt;
+
+        &lt;!-- Fonts --&gt;
+        &lt;link rel=&quot;dns-prefetch&quot; href=&quot;//fonts.gstatic.com&quot;&gt;
+        &lt;link href=&quot;https://fonts.googleapis.com/css?family=Nunito&quot; rel=&quot;stylesheet&quot;&gt;
+
+        &lt;!-- Styles --&gt;
+        &lt;style&gt;
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: &#39;Nunito&#39;, sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 26px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;flex-center position-ref full-height&quot;&gt;
+            &lt;div class=&quot;code&quot;&gt;
+                429            &lt;/div&gt;
+
+            &lt;div class=&quot;message&quot; style=&quot;padding: 10px;&quot;&gt;
+                Too Many Requests            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>assert responseStatus == 200 || responseStatus == 429</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:38]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:38]</span>
+                <span class="scenario-name">Delete an employee</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>410</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:38]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def templatePost = read(&#39;classpath:co/com/choucair/certification/utils/post_request.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def templateUpdate = read(&#39;classpath:co/com/choucair/certification/utils/update_request.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def rnd = Math.floor(Math.random() * (max - min + 1) + min)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templatePost.data.id = rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templatePost.data.name = name + rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templatePost.data.salary = rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templatePost.data.age = rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templateUpdate.name = name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templateUpdate.salary = rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set templateUpdate.age = rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;delete/&#39; + rnd</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">406</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.40">11:55:37.785 request:
+1 &gt; DELETE https://dummy.restapiexample.com/api/v1/delete/239
+1 &gt; Host: dummy.restapiexample.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:55:38.189 response time in milliseconds: 404
+1 &lt; 429
+1 &lt; Date: Wed, 16 Aug 2023 16:55:37 GMT
+1 &lt; Server: Apache
+1 &lt; X-RateLimit-Limit: 60
+1 &lt; X-RateLimit-Remaining: 55
+1 &lt; retry-after: 58
+1 &lt; x-ratelimit-reset: 1692204995
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Upgrade: h2,h2c
+1 &lt; Connection: Upgrade
+1 &lt; Vary: Accept-Encoding
+1 &lt; host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 &lt; X-Endurance-Cache-Level: 2
+1 &lt; X-nginx-cache: WordPress
+1 &lt; Content-Type: text/html; charset=UTF-8
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+
+        &lt;title&gt;Too Many Requests&lt;/title&gt;
+
+        &lt;!-- Fonts --&gt;
+        &lt;link rel=&quot;dns-prefetch&quot; href=&quot;//fonts.gstatic.com&quot;&gt;
+        &lt;link href=&quot;https://fonts.googleapis.com/css?family=Nunito&quot; rel=&quot;stylesheet&quot;&gt;
+
+        &lt;!-- Styles --&gt;
+        &lt;style&gt;
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: &#39;Nunito&#39;, sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 26px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;flex-center position-ref full-height&quot;&gt;
+            &lt;div class=&quot;code&quot;&gt;
+                429            &lt;/div&gt;
+
+            &lt;div class=&quot;message&quot; style=&quot;padding: 10px;&quot;&gt;
+                Too Many Requests            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>assert responseStatus == 200 || responseStatus == 429</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

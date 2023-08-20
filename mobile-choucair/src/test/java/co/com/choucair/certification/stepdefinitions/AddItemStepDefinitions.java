@@ -1,7 +1,7 @@
 package co.com.choucair.certification.stepdefinitions;
 
 
-import co.com.choucair.certification.question.ValidateProductQuestion;
+import co.com.choucair.certification.question.ValidateProduct;
 import co.com.choucair.certification.tasks.Home;
 import co.com.choucair.certification.tasks.Products;
 import io.cucumber.java.Before;
@@ -19,7 +19,7 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 
-public class ProfileStepDefinitions {
+public class AddItemStepDefinitions {
 
     @Before
     public void setTheStage() {
@@ -33,15 +33,11 @@ public class ProfileStepDefinitions {
 
     @When("The user enters the following data in the application")
     public void theUserEntersTheFollowingSataInTheApplication(@Transpose Map<String, String> dataTable) {
-        theActorInTheSpotlight().attemptsTo(
-                Products.form(dataTable)
-        );
+        theActorInTheSpotlight().attemptsTo(Products.inForm(dataTable));
     }
 
     @Then("The user views the product in the shopping cart")
     public void theUserViewsTheProductInTheShoppingCart() {
-        theActorInTheSpotlight().should(
-                seeThat(ValidateProductQuestion.valuesInConnect())
-        );
+        theActorInTheSpotlight().should(seeThat(ValidateProduct.isCorrect()));
     }
 }

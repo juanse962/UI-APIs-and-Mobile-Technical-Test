@@ -36,15 +36,10 @@ buildscript {
 dependencies {
     implementation "net.serenity-bdd:serenity-core:${serenityCoreVersion}",
     "org.slf4j:slf4j-simple:${slf4jVersion}" ,
-    "ch.qos.logback:logback-classic:${logbackVersion}",
     "net.serenity-bdd:serenity-cucumber:${serenityCoreVersion}",
     "net.serenity-bdd:serenity-screenplay:${serenityCoreVersion}",
-    "net.serenity-bdd:serenity-ensure:${serenityCoreVersion}",
     "junit:junit:${junitVersion}",
     "io.appium:java-client:${javaClientAppium}",
-    "org.junit.platform:junit-platform-launcher:${junitPlatform}",
-    "org.junit.jupiter:junit-jupiter-engine:${junitJupiter}",
-    "org.junit.vintage:junit-vintage-engine:${junitVintage}",
     "org.assertj:assertj-core:${assertJVersion}"
 }
 

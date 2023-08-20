@@ -4,13 +4,13 @@ import co.com.choucair.certification.userinterface.ShoppingCartManagement;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
-public class ValidateProductQuestion  implements Question {
+public class ValidateProduct implements Question {
 
     private String items;
 
 
-    public static ValidateProductQuestion valuesInConnect(){
-        return new ValidateProductQuestion();
+    public static ValidateProduct isCorrect(){
+        return new ValidateProduct();
     }
 
     @Override

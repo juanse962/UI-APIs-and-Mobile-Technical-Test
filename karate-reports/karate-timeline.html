@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"Test worker","id":1}];
+var items = [{"id":1,"group":1,"content":"co\/com\/choucair\/certification\/user-dummy[1:19]","start":1692204935970,"end":1692204936858,"title":"co\/com\/choucair\/certification\/user-dummy[1:19] 11:55:35.970-11:55:36.858 Get employees"},{"id":2,"group":1,"content":"co\/com\/choucair\/certification\/user-dummy[2:24]","start":1692204936867,"end":1692204937336,"title":"co\/com\/choucair\/certification\/user-dummy[2:24] 11:55:36.867-11:55:37.336 Create employee"},{"id":3,"group":1,"content":"co\/com\/choucair\/certification\/user-dummy[3:31]","start":1692204937341,"end":1692204937772,"title":"co\/com\/choucair\/certification\/user-dummy[3:31] 11:55:37.341-11:55:37.772 Update an employee"},{"id":4,"group":1,"content":"co\/com\/choucair\/certification\/user-dummy[4:38]","start":1692204937779,"end":1692204938189,"title":"co\/com\/choucair\/certification\/user-dummy[4:38] 11:55:37.779-11:55:38.189 Delete an employee"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

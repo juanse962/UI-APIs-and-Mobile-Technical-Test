@@ -20,7 +20,7 @@ public class Products implements Task {
         this.dataTable = dataTable;
     }
 
-    public static Performable form(Map<String, String> dataTable) {
+    public static Performable inForm(Map<String, String> dataTable) {
         return new Products(dataTable);
     }
 
