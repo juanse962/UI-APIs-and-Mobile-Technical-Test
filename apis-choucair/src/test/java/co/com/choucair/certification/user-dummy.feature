@@ -16,10 +16,12 @@ Feature: Testing Dummy API using Karate DSL
     * set templateUpdate.salary = rnd
     * set templateUpdate.age = rnd
 
+
   Scenario: Get employees
     Given path 'employees'
     When method Get
     Then assert responseStatus == 200 || responseStatus == 429
+
 
   Scenario: Create employee
     Given path 'create'
@@ -28,12 +30,14 @@ Feature: Testing Dummy API using Karate DSL
     When method Post
     Then assert responseStatus == 200 || responseStatus == 429
 
+
   Scenario: Update an employee
     Given path 'update/' + rnd
     And header Content-Type = 'application/json'
     And request templateUpdate
     When method Put
     Then assert responseStatus == 200 || responseStatus == 429
+
 
   Scenario: Delete an employee
     Given path 'delete/' + rnd
